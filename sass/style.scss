@@ -1,13 +1,13 @@
-$font-primary: 'Open Sans', Arial, sans-serif;
-$font-secondary: 'Prata', serif;
+$font-primary: 'Inconsolata', serif;
+$font-secondary: 'Open Sans', Arial, sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px; 
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
-$brand-primary: #d73930;
-$brand-secondary: #eb212e; 
+$brand-primary: #bf182a;
+$brand-secondary: #eb212e;
 
 
 
@@ -441,7 +441,7 @@ img {
 		right: 0;
 		z-index: 2;
 		width: 100%;
-		background: rgba(38, 39, 44, .9);
+		background: rgba(38, 39, 44, .6);
 		
 	}
 	&, .text-wrap {
@@ -459,11 +459,12 @@ img {
 		text-align: center;
 		
 		h1 {
-			font-size: 38px;
+			font-size: 70px;
 			text-transform: uppercase;
 			color: rgba(255,255,255,1);
 			margin: 0 0 20px 0;
-			font-weight: 400;
+			font-weight: 900;
+			line-height: 7;
 		}
 		h2 {
 			font-size: 20px;
@@ -524,6 +525,10 @@ img {
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}	
+}
+
+#fh5co-explore {
+	background: darken($brand-bg-color, 5%);
 }
 
 .fh5co-explore{
@@ -609,7 +614,6 @@ img {
 #fh5co-testimony{
 	// margin-bottom: 80px;
 	// padding: 0 40px;
-	background: darken($brand-bg-color, 5%);
 	padding: 7em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
@@ -1004,7 +1008,7 @@ img {
 
 #fh5co-footer{
 	// background: $brand-bg-footer;
-	background: darken($brand-bg-color, 0%);
+	background: darken($brand-bg-color, 5%);
 	a{
 		color: #74889e;
 			&:hover {
