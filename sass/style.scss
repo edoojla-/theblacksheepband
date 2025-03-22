@@ -219,12 +219,9 @@ h1, h2, h3, h4, h5, h6 {
   .navbar {
     padding-bottom: 0;
     margin-bottom: 0;
-
-
   }
 
   #navbar {
-
 
     &.navbar-collapse {
       border-top: 1px solid rgba(255, 255, 255, .2);
@@ -306,9 +303,9 @@ h1, h2, h3, h4, h5, h6 {
         a {
           background: transparent;
           background: none;
-          color: $brand-white;
+          color: rgba(255, 255, 255, .5) !important;
           @media screen and (max-width: $screen-xs) {
-            color: $brand-white;
+            color: rgba(255, 255, 255, .5) !important;
           }
 
           span {
@@ -316,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
               visibility: visible;
               -webkit-transform: scaleX(1);
               transform: scaleX(1);
-              background-color: $brand-white;
+              background-color: rgba(255, 255, 255, .5) !important;
               @media screen and (max-width: $screen-xs) {
                 background-color: transparent;
 
@@ -378,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &.navbar-fixed-top {
     position: fixed !important;
-    background: $brand-white;
+    background: $brand-primary;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
@@ -386,21 +383,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     top: 0;
 
+    .navbar-brand {
+      padding: 5px;
+
+      img {
+        height: 100%
+      }
+    }
+
     #navbar {
 
       li {
         a {
-          color: rgba(255, 255, 255, .5) !important;
+          //color: rgba(255, 255, 255, .5) !important;
           @include transition(.3s);
 
           &:hover {
-            color: $brand-primary;
+            //color: $brand-primary;
           }
         }
 
         &.active {
           a {
-            color: $brand-white !important;
+            // color: $brand-white !important;
             @media screen and (max-width: $screen-sm) {
               color: $brand-primary !important;
             }
@@ -448,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-default {
     border: transparent;
     background: darken($brand-bg-color, 5%);
-    background: $brand-primary;
+    background: transparent;
     margin: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -472,11 +477,6 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-}
-
-.lead {
-  font-size: 18px;
-  line-height: 3;
 }
 
 img {
@@ -551,6 +551,10 @@ img {
       margin: 0 0 20px 0;
       font-weight: 900;
       line-height: 7;
+      @media screen and (max-width: $screen-md) {
+        font-size: 40px;
+        line-height: 1;
+      }
     }
 
     h2 {
@@ -607,6 +611,10 @@ img {
 
       li {
         font-size: 32px;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
