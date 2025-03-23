@@ -1,0 +1,12 @@
+# ide
+.idea/
+
+# css, bootstrap
+/css/style.css
+/css/style.css.map
+/sass/bootstrap/
+/sass/bootstrap.css
+/sass/bootstrap.css.map
+/sass/style.css
+/sass/style.css.map
+

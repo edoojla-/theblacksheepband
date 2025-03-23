@@ -367,6 +367,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     img {
+      content:url("../images/logo-4.jpeg");
       border-radius: 50%;
       height: 150px;
     }
@@ -386,8 +387,9 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-brand {
       padding: 5px;
 
-      img {
-        height: 100%
+      img[src*="images/logo-4.jpeg"] {
+        content: url("../images/logo-without-lettering.jpeg");
+        height: 100%;
       }
     }
 
