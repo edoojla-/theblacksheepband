@@ -13,6 +13,7 @@ $brand-darker: #333;
 $brand-gray: #ccc;
 $brand-lighter: #e9e9e9;
 $brand-body-color: #b1b1b7;
+$brand-dark-body-color: #26272c;
 $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #3b3d40;
 $brand-bg-footer: #3f5267;
@@ -353,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar-brand {
-    float: left;
+    float: none;
     display: block;
     font-size: 24px;
     font-weight: 700;
@@ -367,9 +368,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     img {
-      content:url("../images/logo-4.jpeg");
+      content: url("../images/logo-4.jpeg");
       border-radius: 50%;
       height: 150px;
+
+      @media screen and (max-width: $screen-md) {
+        margin: auto;
+      }
     }
 
   }
@@ -681,12 +686,15 @@ img {
 
     li {
       list-style: none;
-      margin: 0;
-      padding: 0;
       font-size: 14px;
-      padding-left: 30px;
-      margin-bottom: 10px;
+      padding: 1.3em 0 1.3em 6.75em;
+      margin: 0 0 10px;
       position: relative;
+      border-top: solid 1px $brand-bg-color;
+
+      &:first-child {
+        border-top: 0;
+      }
 
       i {
         position: absolute;
@@ -695,8 +703,44 @@ img {
         font-size: 18px;
         color: $brand-secondary;
       }
+
+      .date {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 1.3em;
+        background-color: $brand-primary;
+        height: 3.5em;
+        text-align: center;
+        color: $brand-dark-body-color;
+        line-height: 1em;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0.5em 0.75em 0 1em;
+
+        strong {
+          display: block;
+          font-size: 1.75em;
+          padding-top: 0.15em;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: -1.2em;
+          border-left: solid 1.25em $brand-primary;
+          border-top: solid 1.8em transparent;
+          border-bottom: solid 1.8em transparent;
+        }
+      }
+
+      h5 {
+        margin: 0;
+      }
     }
   }
+
 }
 
 .list-nav {
