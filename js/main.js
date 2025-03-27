@@ -159,7 +159,7 @@
 
     var exploreAnimate = function () {
 
-        var explore = $('#fh5co-explore');
+        var explore = $('#fh5co-tour');
         if (explore.length > 0) {
 
             explore.waypoint(function (direction) {
@@ -210,7 +210,7 @@
     };
 
     var testimonyAnimate = function () {
-        var testimony = $('#fh5co-testimony');
+        var testimony = $('#fh5co-gallery');
         if (testimony.length > 0) {
 
             testimony.waypoint(function (direction) {
@@ -280,7 +280,7 @@
 
 
     var servicesAnimate = function () {
-        var services = $('#fh5co-services');
+        var services = $('#fh5co-videos');
         if (services.length > 0) {
 
             services.waypoint(function (direction) {
@@ -324,7 +324,7 @@
 
 
     var teamAnimate = function () {
-        var team = $('#fh5co-team');
+        var team = $('#fh5co-band');
         if (team.length > 0) {
 
             team.waypoint(function (direction) {

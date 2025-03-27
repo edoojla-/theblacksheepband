@@ -628,7 +628,7 @@ img {
 }
 
 
-#fh5co-services, #fh5co-testimony, #fh5co-about, #fh5co-explore, #fh5co-faq, #fh5co-team, #fh5co-trusted, #fh5co-footer {
+#fh5co-videos, #fh5co-gallery, #fh5co-about, #fh5co-tour, #fh5co-faq, #fh5co-band, #fh5co-trusted, #fh5co-footer {
   padding: 5em 0;
   @media screen and (max-width: $screen-sm) {
     padding: 2em 0;
@@ -642,16 +642,16 @@ img {
   }
 }
 
-#fh5co-explore {
+#fh5co-tour {
   background: darken($brand-bg-color, 5%);
 }
 
-.fh5co-explore {
+.fh5co-tour {
   // margin-bottom: 80px;
   padding-bottom: 40px;
 }
 
-.fh5co-explore-bg-color {
+.fh5co-tour-bg-color {
   width: 100%;
   background: darken($brand-bg-color, 5%);
   padding: 7em 0;
@@ -749,11 +749,9 @@ img {
 
   li {
     list-style: none;
-    margin: 0;
-    padding: 0;
     font-size: 14px;
-    padding-left: 30px;
-    margin-bottom: 10px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
     position: relative;
 
     i {
@@ -766,7 +764,7 @@ img {
   }
 }
 
-#fh5co-testimony {
+#fh5co-gallery {
   // margin-bottom: 80px;
   // padding: 0 40px;
   padding: 7em 0;
@@ -862,142 +860,8 @@ img {
   }
 }
 
-.getting-started {
-  background: $brand-primary;
-  padding: 60px 0 40px 0;
-
-  h3 {
-    color: $brand-white;
-  }
-
-  p {
-    // color: darken($brand-white, 10%) !important;
-    color: rgba(255, 255, 255, .8);
-  }
-
-  .call-to-action {
-    display: block;
-    width: 100%;
-    float: left;
-    @media screen and (max-width: $screen-md) {
-      float: none !important;
-      width: 100%;
-      text-align: left !important;
-    }
-
-    a.sign-up {
-      float: right;
-      margin-top: 20px;
-      padding: 18px 60px;
-      background: $brand-white;
-      color: $brand-primary;
-      font-family: $font-primary !important;
-      @include border-radius(4px);
-      -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-      -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-      -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-      -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-      box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-      @media screen and (max-width: $screen-md) {
-        float: left !important;
-      }
-
-      &:hover, &:focus, &:active {
-        text-decoration: none;
-      }
-
-      &:hover {
-        background: $brand-white;
-      }
-    }
-  }
-}
-
-.fh5co-pricing {
-  padding: 4em 0 6em 0;
-  background: darken($brand-bg-color, 5%);
-
-  .pricing {
-    display: block;
-    float: left;
-    margin-bottom: 30px;
-  }
-
-  .price-box {
-    text-align: center;
-    padding: 30px;
-    background: $brand-white;
-    @include border-radius(5px);
-    margin-bottom: 40px;
-    position: relative;
-    -webkit-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
-    -ms-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
-    -o-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
-    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
-
-    &.popular {
-      .btn-select-plan {
-        background: $brand-primary;
-      }
-    }
-
-    .btn-select-plan {
-      padding: 10px 20px;
-      background: $brand-secondary;
-      color: $brand-white;
-
-      -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
-      -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
-      -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
-      box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  .pricing-plan {
-    margin: 0 0 50px 0;
-    padding: 0;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #888f94;
-
-    &.pricing-plan-offer {
-      margin-bottom: 24px;
-    }
-
-    span {
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 0;
-      color: #d5d8db;
-    }
-  }
-
-  .price {
-    font-size: 72px;
-    color: #6d6d6d;
-    line-height: 50px;
-
-    .currency {
-      font-size: 30px;
-      top: -0.9em;
-      padding-right: 10px;
-    }
-
-    small {
-      font-size: 13px;
-      display: block;
-      text-transform: uppercase;
-      color: #888f94;
-    }
-  }
-}
-
-.fh5co-services {
-  .box-services {
+.fh5co-videos {
+  .box-videos {
     position: relative;
     margin-bottom: 70px;
 
@@ -1018,23 +882,18 @@ img {
       margin-bottom: 15px;
     }
   }
-
-  .call-to-action {
-    .btn-learn {
-      padding: 12px 30px;
-      background: $brand-secondary;
-      color: $brand-white;
-    }
-  }
 }
 
-#fh5co-team {
-  background: darken($brand-bg-color, 5%);
+#fh5co-band {
+  @media screen and (min-width: $screen-md) {
+    .row:nth-child(2) {
+      margin-bottom: 30px;
+    }
+  }
 
-  .team-box {
+  .box-band {
     position: relative;
-    padding: 30px;
-    padding-top: 2em;
+    padding: 2em 30px 30px;
     background: $brand-white;
     background: darken($brand-bg-color, 6%);
     float: left;
@@ -1074,28 +933,6 @@ img {
       display: block;
       margin-bottom: 30px;
     }
-
-    .social-media {
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        font-size: 24px;
-        margin-right: 10px;
-
-        a {
-          color: lighten($brand-bg-color, 10%);
-
-          &:hover, &:focus, &:active {
-            text-decoration: none;
-            color: $brand-primary !important;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -1122,14 +959,9 @@ img {
   @include inline-block;
 }
 
-// > a{
-// 	margin-left: 80px;
-
-// 	&:first-child{
-// 		margin-left: 0;
-// 	}
-// }
-// }
+section:nth-child(2n) {
+  background: darken($brand-bg-color, 5%);
+}
 
 .section-heading {
   float: left;
