@@ -628,7 +628,7 @@ img {
 }
 
 
-#fh5co-videos, #fh5co-gallery, #fh5co-about, #fh5co-tour, #fh5co-faq, #fh5co-band, #fh5co-trusted, #fh5co-footer {
+#fh5co-videos, #fh5co-gallery, #fh5co-about, #fh5co-tour, #fh5co-faq, #fh5co-band, #fh5co-trusted, #fh5co-footer, #data-protection, #imprint {
   padding: 5em 0;
   @media screen and (max-width: $screen-sm) {
     padding: 2em 0;
@@ -642,25 +642,13 @@ img {
   }
 }
 
-#fh5co-tour {
-  background: darken($brand-bg-color, 5%);
-}
-
 .fh5co-tour {
   // margin-bottom: 80px;
   padding-bottom: 40px;
 }
 
-.fh5co-tour-bg-color {
-  width: 100%;
-  background: darken($brand-bg-color, 5%);
-  padding: 7em 0;
-  // padding: 80px 40px;
-  margin-bottom: 0;
-}
-
 .mt {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 80px;
 
   h4 {
@@ -1014,8 +1002,6 @@ section:nth-child(2n) {
 }
 
 #fh5co-footer {
-  // background: $brand-bg-footer;
-  background: darken($brand-bg-color, 5%);
 
   a {
     color: #74889e;
@@ -1023,6 +1009,15 @@ section:nth-child(2n) {
     &:hover {
       color: $brand-white !important;
       text-decoration: underline;
+    }
+  }
+
+  .row {
+    display: flex;
+
+    > div {
+      margin: auto;
+      text-align: center;
     }
   }
 
@@ -1036,11 +1031,33 @@ section:nth-child(2n) {
       position: absolute;
       content: '';
       bottom: 0;
-      left: 0;
+      left: 50%;
+      margin-left: -25px;
       display: block;
       width: 35px;
       height: 2px;
       background: $brand-primary;
+    }
+  }
+
+  .footer-nav {
+    a:first-child {
+      padding-left: 15px;
+    }
+
+    a {
+      display: inline-block;
+      padding: .25rem 15px .25rem 0;
+    }
+
+    a:first-child::before {
+      content: "";
+      padding-right: 0;
+    }
+
+    a::before {
+      content: "|";
+      padding-right: 1.5rem;
     }
   }
 
@@ -1086,7 +1103,6 @@ section:nth-child(2n) {
         top: 0;
         left: 0;
         font-size: 20px;
-        color: $brand-primary;
         color: lighten($brand-bg-color, 20%);
       }
 
@@ -1462,4 +1478,9 @@ section:nth-child(2n) {
       border: 2px solid $brand-primary;
     }
   }
+}
+
+// Datenschutz
+#data-protection, #imprint {
+  padding-top: 14em;
 }
