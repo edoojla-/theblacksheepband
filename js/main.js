@@ -11,7 +11,7 @@
     // Burger Menu
     var burgerMenu = function () {
 
-        $('body').on('click', '.js-fh5co-nav-toggle', function (event) {
+        $('body').on('click', '.js-nav-toggle', function (event) {
 
             event.preventDefault();
 
@@ -57,7 +57,7 @@
             if (navbar.is(':visible')) {
                 navbar.removeClass('in');
                 navbar.attr('aria-expanded', 'false');
-                $('.js-fh5co-nav-toggle').removeClass('active');
+                $('.js-nav-toggle').removeClass('active');
             }
 
             event.preventDefault();
@@ -109,16 +109,16 @@
 
         $(window).scroll(function (event) {
 
-            var header = $('#fh5co-header'),
+            var header = $('#header'),
                 scrlTop = $(this).scrollTop();
 
             if (scrlTop > 500 && scrlTop <= 2000) {
-                header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+                header.addClass('navbar-fixed-top animated slideInDown');
             } else if (scrlTop <= 500) {
                 if (header.hasClass('navbar-fixed-top')) {
-                    header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+                    header.addClass('navbar-fixed-top animated slideOutUp');
                     setTimeout(function () {
-                        header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+                        header.removeClass('navbar-fixed-top animated slideInDown slideOutUp');
                     }, 100);
                 }
             }
@@ -130,15 +130,15 @@
     // Animations
     // Home
     var homeAnimate = function () {
-        if ($('#fh5co-home').length > 0) {
+        if ($('#home').length > 0) {
 
-            $('#fh5co-home').waypoint(function (direction) {
+            $('#home').waypoint(function (direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
                     setTimeout(function () {
-                        $('#fh5co-home .to-animate').each(function (k) {
+                        $('#home .to-animate').each(function (k) {
                             var el = $(this);
 
                             setTimeout(function () {
@@ -159,7 +159,7 @@
 
     var exploreAnimate = function () {
 
-        var explore = $('#fh5co-tour');
+        var explore = $('#tour');
         if (explore.length > 0) {
 
             explore.waypoint(function (direction) {
@@ -210,7 +210,7 @@
     };
 
     var testimonyAnimate = function () {
-        var testimony = $('#fh5co-gallery');
+        var testimony = $('#gallery');
         if (testimony.length > 0) {
 
             testimony.waypoint(function (direction) {
@@ -280,7 +280,7 @@
 
 
     var servicesAnimate = function () {
-        var services = $('#fh5co-videos');
+        var services = $('#videos');
         if (services.length > 0) {
 
             services.waypoint(function (direction) {
@@ -324,7 +324,7 @@
 
 
     var teamAnimate = function () {
-        var team = $('#fh5co-band');
+        var team = $('#band');
         if (team.length > 0) {
 
             team.waypoint(function (direction) {
@@ -367,7 +367,7 @@
 
 
     var footerAnimate = function () {
-        var footer = $('#fh5co-footer');
+        var footer = $('#footer');
         if (footer.length > 0) {
 
             footer.waypoint(function (direction) {
