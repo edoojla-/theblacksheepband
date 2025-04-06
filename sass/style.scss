@@ -628,7 +628,7 @@ img {
 }
 
 
-#fh5co-videos, #fh5co-gallery, #fh5co-about, #fh5co-tour, #fh5co-faq, #fh5co-band, #fh5co-trusted, #fh5co-footer, #data-protection, #imprint {
+#fh5co-videos, #fh5co-gallery, #fh5co-about, #fh5co-tour, #fh5co-faq, #fh5co-band, #fh5co-trusted, #fh5co-footer:not(.data-protection-footer,.imprint-footer) {
   padding: 5em 0;
   @media screen and (max-width: $screen-sm) {
     padding: 2em 0;
@@ -1482,5 +1482,14 @@ section:nth-child(2n) {
 
 // Datenschutz
 #data-protection, #imprint {
-  padding-top: 14em;
+  padding: 14em 0 0 0;
+
+  .box-with-shadow {
+    padding: 3rem;
+    position: relative;
+    background: $brand-bg-color;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
 }
