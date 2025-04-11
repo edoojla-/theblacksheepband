@@ -152,39 +152,18 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.5) !important;
   }
 }
-#header #navbar li.active a span:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  background-color: rgba(255, 255, 255, 0.5) !important;
+@media screen and (min-width: 768px) {
+  #header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 480px) {
   #header #navbar li.active a span:before {
     background-color: transparent;
   }
-}
-#header #navbar li.call-to-action {
-  margin-left: 10px;
-}
-#header #navbar li.call-to-action a {
-  border: none;
-  padding: 2px 20px 2px 20px;
-  margin: 12px 0 0 0px;
-  line-height: 1.5;
-  background-color: #eab900;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
-}
-#header #navbar li.call-to-action a:hover {
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-#header #navbar li.call-to-action a span:before {
-  background-color: transparent;
 }
 #header .navbar-brand {
   float: none;
@@ -219,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-  margin-top: 0px;
+  margin-top: 0;
   top: 0;
 }
 #header.navbar-fixed-top .navbar-brand {
@@ -236,32 +215,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #header.navbar-fixed-top #navbar li.active a {
-    color: #eab900 !important;
+    color: #fff !important;
   }
 }
-#header.navbar-fixed-top #navbar li.active a span:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  background-color: #fff;
+@media screen and (min-width: 768px) {
+  #header.navbar-fixed-top #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: #fff;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
   #header.navbar-fixed-top #navbar li.active a span:before {
     background-color: transparent;
   }
-}
-#header.navbar-fixed-top #navbar li.call-to-action a {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
-}
-#header.navbar-fixed-top #navbar li.call-to-action a:hover {
-  background-color: #eab900;
-  color: #fff !important;
-}
-#header.navbar-fixed-top #navbar li.call-to-action a span:before {
-  background-color: transparent;
 }
 #header .navbar-default {
   border: transparent;
@@ -277,20 +245,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #header .navbar-default {
-    margin-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
-}
-#header .navbar-default .brand-slogan {
-  margin: 28px 0 0 15px;
-  float: left;
-  letter-spacing: 2px;
-  color: #adadad;
-}
-#header .navbar-default .brand-slogan em {
-  color: #eab900;
-  font-style: normal;
 }
 
 img {

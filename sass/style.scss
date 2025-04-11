@@ -223,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #navbar {
-
     &.navbar-collapse {
       border-top: 1px solid rgba(255, 255, 255, .2);
     }
@@ -236,7 +235,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     li {
-
       a {
         font-family: $font-primary;
         color: $brand-darker;
@@ -309,44 +307,19 @@ h1, h2, h3, h4, h5, h6 {
             color: rgba(255, 255, 255, .5) !important;
           }
 
-          span {
-            &:before {
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-              background-color: rgba(255, 255, 255, .5) !important;
-              @media screen and (max-width: $screen-xs) {
-                background-color: transparent;
+          @media screen and (min-width: $screen-sm) {
+            span {
+              &:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                background-color: rgba(255, 255, 255, .5) !important;
+                @media screen and (max-width: $screen-xs) {
+                  background-color: transparent;
 
+                }
               }
             }
-          }
-        }
-      }
-
-      &.call-to-action {
-        margin-left: 10px;
-
-        a {
-          border: none;
-          padding: 2px 20px 2px 20px;
-          margin: 12px 0 0 0px;
-          line-height: 1.5;
-          background-color: $brand-primary;
-          border: 2px solid rgba(255, 255, 255, .1);
-          color: $brand-white;
-          @include border-radius(30px);
-
-          &:hover {
-            border: 2px solid rgba(255, 255, 255, .3);
-            color: $brand-white;
-          }
-
-          span {
-            &:before {
-              background-color: transparent;
-            }
-
           }
         }
       }
@@ -386,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
-    margin-top: 0px;
+    margin-top: 0;
     top: 0;
 
     .navbar-brand {
@@ -399,57 +372,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #navbar {
-
       li {
         a {
           //color: rgba(255, 255, 255, .5) !important;
           @include transition(.3s);
-
-          &:hover {
-            //color: $brand-primary;
-          }
         }
 
         &.active {
           a {
             // color: $brand-white !important;
             @media screen and (max-width: $screen-sm) {
-              color: $brand-primary !important;
-            }
-
-            span {
-              &:before {
-                visibility: visible;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                background-color: $brand-white;
-                @media screen and (max-width: $screen-sm) {
-                  background-color: transparent;
-                }
-
-              }
-            }
-          }
-        }
-
-        &.call-to-action {
-
-          a {
-            // border: 2px solid $brand-primary;
-            // padding: 5px 10px 3px 10px;
-            // margin: 12px 0 0 0px;
-            @include border-radius(30px);
-
-            &:hover {
-              background-color: $brand-primary;
               color: $brand-white !important;
             }
-
-            span {
-              &:before {
-                background-color: transparent;
+            @media screen and (min-width: $screen-sm) {
+              span {
+                &:before {
+                  visibility: visible;
+                  -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+                  background-color: $brand-white;
+                  @media screen and (max-width: $screen-sm) {
+                    background-color: transparent;
+                  }
+                }
               }
-
             }
           }
         }
@@ -466,21 +412,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 50px;
     @include border-radius(0px);
     @media screen and (max-width: $screen-sm) {
-      margin-top: 0px;
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-
-    .brand-slogan {
-      margin: 28px 0 0 15px;
-      float: left;
-      letter-spacing: 2px;
-      color: #adadad;
-
-      em {
-        color: $brand-primary;
-        font-style: normal;
-      }
+      margin-top: 0;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
