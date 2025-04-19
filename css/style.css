@@ -546,11 +546,10 @@ img {
 }
 #gallery .wrap-testimony .testimony-slide blockquote {
   border: none;
-  margin: 0 auto;
   width: 72%;
   position: relative;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 @media screen and (max-width: 992px) {
   #gallery .wrap-testimony .testimony-slide blockquote {
@@ -660,25 +659,6 @@ img {
   margin-bottom: 30px;
 }
 
-.box-faq {
-  margin-bottom: 60px;
-}
-.box-faq h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.partner-logo {
-  margin-bottom: 30px;
-  float: left;
-  width: 100%;
-  vertical-align: middle;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
 section:nth-child(2n) {
   background: rgb(26.1829268293, 26.8719512195, 30.3170731707);
 }
@@ -764,6 +744,9 @@ section:nth-child(2n) {
   height: 2px;
   background: #eab900;
 }
+#footer .footer-nav {
+  margin-bottom: 1em;
+}
 #footer .footer-nav a:first-child {
   padding-left: 15px;
 }
@@ -778,24 +761,6 @@ section:nth-child(2n) {
 #footer .footer-nav a::before {
   content: "|";
   padding-right: 1.5rem;
-}
-#footer .copy-right {
-  position: relative;
-  padding-top: 20px;
-  margin-top: 40px;
-}
-#footer .copy-right > a {
-  color: #eab900;
-}
-#footer .copy-right:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  display: block;
-  width: 35px;
-  height: 2px;
-  background: #eab900;
 }
 #footer .social-media {
   margin: 0 0 30px 0;
@@ -812,55 +777,6 @@ section:nth-child(2n) {
 }
 #footer .social-media li a:hover, #footer .social-media li a:focus, #footer .social-media li a:active {
   text-decoration: none;
-}
-#footer .contact-form .form-group input[type=name],
-#footer .contact-form .form-group input[type=text],
-#footer .contact-form .form-group input[type=email],
-#footer .contact-form .form-group textarea {
-  font-size: 14px;
-}
-#footer .contact-form .form-group input[type=name]::-webkit-input-placeholder,
-#footer .contact-form .form-group input[type=text]::-webkit-input-placeholder,
-#footer .contact-form .form-group input[type=email]::-webkit-input-placeholder,
-#footer .contact-form .form-group textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer .contact-form .form-group input[type=name]:-moz-placeholder,
-#footer .contact-form .form-group input[type=text]:-moz-placeholder,
-#footer .contact-form .form-group input[type=email]:-moz-placeholder,
-#footer .contact-form .form-group textarea:-moz-placeholder { /* Firefox 18- */
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer .contact-form .form-group input[type=name]::-moz-placeholder,
-#footer .contact-form .form-group input[type=text]::-moz-placeholder,
-#footer .contact-form .form-group input[type=email]::-moz-placeholder,
-#footer .contact-form .form-group textarea::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer .contact-form .form-group input[type=name]:-ms-input-placeholder,
-#footer .contact-form .form-group input[type=text]:-ms-input-placeholder,
-#footer .contact-form .form-group input[type=email]:-ms-input-placeholder,
-#footer .contact-form .form-group textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer .contact-form .form-group input {
-  color: #fff;
-  background: transparent;
-  border: none;
-  background: #485b71;
-  background: rgb(61.6341463415, 63.256097561, 71.3658536585);
-  box-shadow: none;
-}
-#footer .contact-form .form-group textarea {
-  color: #fff;
-  background: transparent;
-  border: none;
-  background: rgb(61.6341463415, 63.256097561, 71.3658536585);
-  box-shadow: none;
-}
-#footer #btn-submit {
-  color: rgba(255, 255, 255, 0.9) !important;
-  background: #eab900 !important;
 }
 
 .contact-info {
@@ -976,7 +892,6 @@ section:nth-child(2n) {
   right: 15px;
   z-index: 21;
   padding: 6px 0 0 0;
-  display: block;
   margin: 0 auto;
   display: none;
   height: 44px;
@@ -999,7 +914,6 @@ section:nth-child(2n) {
 .btn.btn-primary {
   background: #eab900;
   color: #fff;
-  border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
@@ -1069,41 +983,6 @@ section:nth-child(2n) {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
-
-#map {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  #map {
-    height: 200px;
-  }
-}
-
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1;
-}
-
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
 }
 
 .js .to-animate,

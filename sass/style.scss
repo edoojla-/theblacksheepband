@@ -39,14 +39,6 @@ $form-group-margin-bottom: 30px;
   *display: inline;
 }
 
-@mixin flex() {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -59,6 +51,7 @@ $form-group-margin-bottom: 30px;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
 }
 
@@ -727,11 +720,10 @@ img {
 
       blockquote {
         border: none;
-        margin: 0 auto;
         width: 72%;
         position: relative;
         padding-bottom: 30px;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
 
         @media screen and (max-width: $screen-md) {
           width: 100%;
@@ -858,29 +850,6 @@ img {
   }
 }
 
-.faq {
-
-}
-
-.box-faq {
-  margin-bottom: 60px;
-
-  h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-}
-
-
-// .logo-partners{
-.partner-logo {
-  margin-bottom: 30px;
-  float: left;
-  width: 100%;
-  vertical-align: middle;
-  @include inline-block;
-}
-
 section:nth-child(2n) {
   background: darken($brand-bg-color, 5%);
 }
@@ -976,6 +945,8 @@ section:nth-child(2n) {
   }
 
   .footer-nav {
+    margin-bottom: 1em;
+
     a:first-child {
       padding-left: 15px;
     }
@@ -996,85 +967,8 @@ section:nth-child(2n) {
     }
   }
 
-  .copy-right {
-    position: relative;
-    padding-top: 20px;
-    margin-top: 40px;
-
-    > a {
-      color: $brand-primary;
-    }
-
-    &:after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      display: block;
-      width: 35px;
-      height: 2px;
-      background: $brand-primary;
-
-    }
-  }
-
-
   .social-media {
     @include social-media();
-  }
-
-  .contact-form {
-    .form-group {
-      input[type="name"],
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        font-size: 14px;
-
-        &::-webkit-input-placeholder {
-          color: rgba(255, 255, 255, .5);
-        }
-
-        &:-moz-placeholder { /* Firefox 18- */
-          color: rgba(255, 255, 255, .5);
-        }
-
-        &::-moz-placeholder { /* Firefox 19+ */
-          color: rgba(255, 255, 255, .5);
-        }
-
-        &:-ms-input-placeholder {
-          color: rgba(255, 255, 255, .5);
-        }
-      }
-
-      input {
-        color: #fff;
-        background: transparent;
-        border: none;
-        background: #485b71;
-        background: lighten($brand-bg-color, 10%);
-        box-shadow: none;
-
-      }
-
-      textarea {
-        color: #fff;
-        // color: #74889e !important;
-        background: transparent;
-        border: none;
-        background: lighten($brand-bg-color, 10%);
-        box-shadow: none;
-      }
-    }
-
-
-  }
-
-  #btn-submit {
-    color: rgba(255, 255, 255, .9) !important;
-    background: $brand-primary !important;
-
   }
 }
 
@@ -1197,7 +1091,6 @@ section:nth-child(2n) {
   right: 15px;
   z-index: 21;
   padding: 6px 0 0 0;
-  display: block;
   margin: 0 auto;
   display: none;
   height: 44px;
@@ -1217,7 +1110,6 @@ section:nth-child(2n) {
   &.btn-primary {
     background: $brand-primary;
     color: $brand-white;
-    border: none !important;
     border: 2px solid transparent !important;
 
     &:hover, &:active, &:focus {
@@ -1303,43 +1195,6 @@ section:nth-child(2n) {
     }
   }
 }
-
-// Map
-#map {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  @media screen and (max-width: $screen-sm) {
-    height: 200px;
-  }
-}
-
-// Magnific Popup
-// Zoom
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1;
-}
-
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-
 
 .js .to-animate,
 .js .to-animate-2,
