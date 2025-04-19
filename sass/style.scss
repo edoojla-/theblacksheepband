@@ -10,11 +10,9 @@ $brand-secondary: #ffa362;
 $brand-white: #fff;
 $brand-black: #000;
 $brand-darker: #333;
-$brand-gray: #ccc;
-$brand-lighter: #e9e9e9;
 $brand-body-color: #b1b1b7;
 $brand-dark-body-color: #26272c;
-$brand-selection-color: #f9f6f0;
+$brand-selection-color: #f9f6f099;
 $brand-overlay-color: #3b3d40;
 $brand-bg-footer: #3f5267;
 $brand-bg-color: #26272c;
@@ -295,9 +293,9 @@ h1, h2, h3, h4, h5, h6 {
         a {
           background: transparent;
           background: none;
-          color: rgba(255, 255, 255, .5) !important;
+          color: $brand-selection-color !important;
           @media screen and (max-width: $screen-xs) {
-            color: rgba(255, 255, 255, .5) !important;
+            color: $brand-selection-color !important;
           }
 
           @media screen and (min-width: $screen-sm) {
@@ -306,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
-                background-color: rgba(255, 255, 255, .5) !important;
+                background-color: $brand-selection-color !important;
                 @media screen and (max-width: $screen-xs) {
                   background-color: transparent;
 

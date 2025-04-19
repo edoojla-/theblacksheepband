@@ -3,13 +3,13 @@
     'use strict';
 
     // Parallax
-    var parallax = function () {
+    const parallax = function () {
         $(window).stellar();
     };
 
 
     // Burger Menu
-    var burgerMenu = function () {
+    const burgerMenu = function () {
 
         $('body').on('click', '.js-nav-toggle', function (event) {
 
@@ -27,8 +27,8 @@
     };
 
 
-    var testimonialCarousel = function () {
-        var owl = $('.owl-carousel-fullwidth');
+    const testimonialCarousel = function () {
+        const owl = $('.owl-carousel-fullwidth');
         owl.owlCarousel({
             items: 1,
             loop: true,
@@ -42,10 +42,10 @@
     };
 
     // Page Nav
-    var clickMenu = function () {
+    const clickMenu = function () {
 
         $('#navbar a:not([class="external"])').click(function (event) {
-            var section = $(this).data('nav-section'),
+            const section = $(this).data('nav-section'),
                 navbar = $('#navbar');
 
             if ($('[data-section="' + section + '"]').length) {
@@ -68,9 +68,9 @@
     };
 
     // Reflect scrolling in navigation
-    var navActive = function (section) {
+    const navActive = function (section) {
 
-        var $el = $('#navbar > ul');
+        const $el = $('#navbar > ul');
         $el.find('li').removeClass('active');
         $el.each(function () {
             $(this).find('a[data-nav-section="' + section + '"]').closest('li').addClass('active');
@@ -78,17 +78,16 @@
 
     };
 
-    var navigationSection = function () {
+    const navigationSection = function () {
 
-        var $section = $('section[data-section]');
+        const $section = $('section[data-section]');
 
         $section.waypoint(function (direction) {
-
             if (direction === 'down') {
                 navActive($(this.element).data('section'));
             }
         }, {
-            offset: '150px'
+            offset: 'bottom-in-view'
         });
 
         $section.waypoint(function (direction) {
@@ -104,12 +103,12 @@
     };
 
     // Window Scroll
-    var windowScroll = function () {
-        var lastScrollTop = 0;
+    const windowScroll = function () {
+        const lastScrollTop = 0;
 
         $(window).scroll(function (event) {
 
-            var header = $('#header'),
+            const header = $('#header'),
                 scrlTop = $(this).scrollTop();
 
             if (scrlTop > 500 && scrlTop <= 2000) {
@@ -129,7 +128,7 @@
 
     // Animations
     // Home
-    var homeAnimate = function () {
+    const homeAnimate = function () {
         if ($('#home').length > 0) {
 
             $('#home').waypoint(function (direction) {
@@ -139,7 +138,7 @@
 
                     setTimeout(function () {
                         $('#home .to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInUp animated');
@@ -157,9 +156,9 @@
         }
     };
 
-    var exploreAnimate = function () {
+    const exploreAnimate = function () {
 
-        var explore = $('#tour');
+        const explore = $('#tour');
         if (explore.length > 0) {
 
             explore.waypoint(function (direction) {
@@ -169,7 +168,7 @@
 
                     setTimeout(function () {
                         explore.find('.to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInUp animated');
@@ -180,7 +179,7 @@
 
                     setTimeout(function () {
                         explore.find('.to-animate-2').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInLeft animated');
@@ -191,7 +190,7 @@
 
                     setTimeout(function () {
                         explore.find('.to-animate-3').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInRight animated');
@@ -209,8 +208,8 @@
         }
     };
 
-    var testimonyAnimate = function () {
-        var testimony = $('#gallery');
+    const testimonyAnimate = function () {
+        const testimony = $('#gallery');
         if (testimony.length > 0) {
 
             testimony.waypoint(function (direction) {
@@ -220,7 +219,7 @@
 
                     setTimeout(function () {
                         testimony.find('.to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInUp animated');
@@ -238,49 +237,8 @@
         }
     };
 
-    var gettingStartedAnimate = function () {
-        var started = $('.getting-started-1');
-        if (started.length > 0) {
-
-            started.waypoint(function (direction) {
-
-                if (direction === 'down' && !$(this.element).hasClass('animated')) {
-
-
-                    setTimeout(function () {
-                        started.find('.to-animate').each(function (k) {
-                            var el = $(this);
-
-                            setTimeout(function () {
-                                el.addClass('fadeInUp animated');
-                            }, k * 200, 'easeInOutExpo');
-
-                        });
-                    }, 200);
-
-                    setTimeout(function () {
-                        started.find('.to-animate-2').each(function (k) {
-                            var el = $(this);
-
-                            setTimeout(function () {
-                                el.addClass('fadeInRight animated');
-                            }, k * 200, 'easeInOutExpo');
-
-                        });
-                    }, 200);
-
-
-                    $(this.element).addClass('animated');
-
-                }
-            }, {offset: '80%'});
-
-        }
-    };
-
-
-    var servicesAnimate = function () {
-        var services = $('#videos');
+    const servicesAnimate = function () {
+        const services = $('#videos');
         if (services.length > 0) {
 
             services.waypoint(function (direction) {
@@ -288,12 +246,12 @@
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
-                    var sec = services.find('.to-animate').length,
-                        sec = parseInt((sec * 200) + 400);
+                    let sec = services.find('.to-animate').length;
+                    sec = parseInt((sec * 200) + 400);
 
                     setTimeout(function () {
                         services.find('.to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInUp animated');
@@ -304,7 +262,7 @@
 
                     setTimeout(function () {
                         services.find('.to-animate-2').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('bounceIn animated');
@@ -322,21 +280,20 @@
         }
     };
 
-
-    var teamAnimate = function () {
-        var team = $('#band');
+    const teamAnimate = function () {
+        const team = $('#band');
         if (team.length > 0) {
 
             team.waypoint(function (direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
-                    var sec = team.find('.to-animate').length,
-                        sec = parseInt((sec * 200) + 400);
+                    let sec = team.find('.to-animate').length;
+                    sec = parseInt((sec * 200) + 400);
 
                     setTimeout(function () {
                         team.find('.to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeIn animated');
@@ -347,7 +304,7 @@
 
                     setTimeout(function () {
                         team.find('.to-animate-2').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeInUp animated');
@@ -365,9 +322,8 @@
         }
     };
 
-
-    var footerAnimate = function () {
-        var footer = $('#footer');
+    const footerAnimate = function () {
+        const footer = $('#footer');
         if (footer.length > 0) {
 
             footer.waypoint(function (direction) {
@@ -376,7 +332,7 @@
 
                     setTimeout(function () {
                         footer.find('.to-animate').each(function (k) {
-                            var el = $(this);
+                            const el = $(this);
 
                             setTimeout(function () {
                                 el.addClass('fadeIn animated');
@@ -401,7 +357,7 @@
         parallax();
         burgerMenu();
         clickMenu();
-        windowScroll();
+        // windowScroll();
         navigationSection();
         testimonialCarousel();
 
@@ -409,7 +365,6 @@
         homeAnimate();
         exploreAnimate();
         testimonyAnimate();
-        gettingStartedAnimate();
         servicesAnimate();
         teamAnimate();
         footerAnimate();
