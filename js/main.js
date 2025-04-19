@@ -4,7 +4,14 @@
 
     // Parallax
     const parallax = function () {
-        $(window).stellar();
+        let is_mobile = false;
+
+        if ($('#the-element').css('display') === 'none') {
+            is_mobile = true;
+        }
+        if (!is_mobile) {
+            $(window).stellar();
+        }
     };
 
 

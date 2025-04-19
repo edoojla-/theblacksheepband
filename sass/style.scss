@@ -20,6 +20,12 @@ $brand-bg-color: #26272c;
 $input-border-focus: $brand-primary;
 $form-group-margin-bottom: 30px;
 
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+  #the-element {
+    display: none;
+  }
+}
 
 // Mixin
 @mixin transition($transition) {
@@ -416,11 +422,11 @@ img {
 }
 
 .img-shadow {
-  -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
   -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-  -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
 }
 
 #home {
@@ -510,11 +516,11 @@ img {
         margin-right: 10px;
         font-family: $font-primary;
 
-        -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-        -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
         -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-        -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
-        box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+        -o-box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
+        box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
 
         &.demo {
           @media screen and (max-width: $screen-sm) {
