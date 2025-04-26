@@ -341,10 +341,6 @@ h1, h2, h3, h4, h5, h6 {
       content: url("../images/logo-4.jpeg");
       border-radius: 50%;
       height: 150px;
-
-      @media screen and (max-width: $screen-md) {
-        margin: auto;
-      }
     }
 
   }
@@ -430,9 +426,13 @@ img {
 }
 
 #home {
-  background-color: transparent;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
   position: relative;
   width: 100%;
 
@@ -523,16 +523,16 @@ img {
         box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.19);
 
         &.demo {
-          @media screen and (max-width: $screen-sm) {
-            margin-bottom: 20px;
-          }
           border: 2px solid #fff;
+          text-decoration: none !important;
 
           &:hover {
             background: rgba(255, 255, 255, .2);
           }
 
-          text-decoration: none !important;
+          @media screen and (max-width: $screen-sm) {
+            margin-bottom: 20px;
+          }
         }
 
         &.download {
