@@ -13,8 +13,8 @@
 }
 @font-face {
   font-family: "obelix-pro";
-  src: url("../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.eot?srf3rx");
-  src: url("../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/ObelixPro-Bold/ObelixProB-cyr.ttf?srf3rx") format("truetype"), url("../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.woff?srf3rx") format("woff"), url("../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.svg?srf3rx#ObelixPro-Bold") format("svg");
+  src: url("../fonts/ObelixPro/ObelixPro-cyr.ttf");
+  src: url("../fonts/ObelixPro/ObelixPro.ttf.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/ObelixPro/ObelixPro-cyr.ttf?srf3rx") format("truetype"), url("../fonts/ObelixPro/ObelixPro.ttf.woff?srf3rx") format("woff"), url("../fonts/ObelixPro/ObelixPro.ttf.svg?srf3rx#ObelixPro") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,14 +25,34 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: #b1b1b7;
   background: #26272c;
   height: 100%;
   position: relative;
+}
+
+h1 {
+  font-size: 3.05em;
+}
+
+h2 {
+  font-size: 2.44em;
+}
+
+h3 {
+  font-size: 1.95em;
+}
+
+h4 {
+  font-size: 1.56em;
+}
+
+h5 {
+  font-size: 1.25em;
 }
 
 a {
@@ -277,7 +297,7 @@ img {
   color: #fff;
 }
 #home h2 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px !important;
   color: rgba(255, 255, 255, 0.3) !important;
 }
@@ -314,7 +334,6 @@ img {
   text-align: center;
 }
 #home .text-inner h1 {
-  font-size: 70px;
   text-transform: uppercase;
   color: #eab900;
   margin: 0 0 20px 0;
@@ -328,7 +347,6 @@ img {
   }
 }
 #home .text-inner h2 {
-  font-size: 20px;
   line-height: 30px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
@@ -677,7 +695,6 @@ section:nth-child(2n) {
 }
 .section-heading h2 {
   margin: 0 0 0 0;
-  font-size: 26px;
   font-weight: 400;
   color: #fff;
   position: relative;
@@ -685,22 +702,16 @@ section:nth-child(2n) {
   padding-bottom: 10px;
   line-height: 1.5;
 }
-@media screen and (max-width: 768px) {
-  .section-heading h2 {
-    font-size: 28px;
-  }
-}
-.section-heading h3 {
-  font-size: 16px;
+.section-heading h4 {
   font-weight: 400;
   line-height: 1.8;
   color: #b1b1b7;
   position: relative;
   display: block;
   padding-bottom: 30px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
 }
-.section-heading h3:after {
+.section-heading h4:after {
   content: "";
   position: absolute;
   display: block;
@@ -712,9 +723,8 @@ section:nth-child(2n) {
   bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  .section-heading h3 {
-    font-size: 16px !important;
-    line-height: 28px;
+  .section-heading h4 {
+    line-height: 1.5;
   }
 }
 
@@ -733,7 +743,6 @@ section:nth-child(2n) {
   text-align: center;
 }
 #footer .section-title {
-  font-size: 22px;
   color: #fff;
   position: relative;
   padding-bottom: 20px;
@@ -789,7 +798,6 @@ section:nth-child(2n) {
   padding: 0;
 }
 .contact-info li {
-  font-size: 14px;
   list-style: none;
   margin: 0 0 20px 0;
   position: relative;
@@ -802,7 +810,6 @@ section:nth-child(2n) {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 20px;
   color: rgb(85.2682926829, 87.512195122, 98.7317073171);
 }
 
@@ -948,7 +955,6 @@ section:nth-child(2n) {
   display: inline-block;
 }
 .social li a {
-  font-size: 16px;
   display: table;
   width: 40px;
   height: 40px;

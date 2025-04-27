@@ -94,11 +94,11 @@ $form-group-margin-bottom: 30px;
 
 @font-face {
   font-family: 'obelix-pro';
-  src: url('../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.eot?srf3rx');
-  src: url('../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.eot?srf3rx#iefix') format('embedded-opentype'),
-  url('../fonts/ObelixPro-Bold/ObelixProB-cyr.ttf?srf3rx') format('truetype'),
-  url('../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.woff?srf3rx') format('woff'),
-  url('../fonts/ObelixPro-Bold/ObelixPro-Bold.ttf.svg?srf3rx#ObelixPro-Bold') format('svg');
+  src: url('../fonts/ObelixPro/ObelixPro-cyr.ttf');
+  src: url('../fonts/ObelixPro/ObelixPro.ttf.eot?srf3rx#iefix') format('embedded-opentype'),
+  url('../fonts/ObelixPro/ObelixPro-cyr.ttf?srf3rx') format('truetype'),
+  url('../fonts/ObelixPro/ObelixPro.ttf.woff?srf3rx') format('woff'),
+  url('../fonts/ObelixPro/ObelixPro.ttf.svg?srf3rx#ObelixPro') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -122,7 +122,7 @@ $form-group-margin-bottom: 30px;
 
 $font-primary: 'obelix-pro', Arial, sans-serif;
 //$font-secondary: 'Inconsolata', serif;$
-$font-secondary: 'Open Sans', Arial, sans-serif;
+$font-secondary: 'Helvetica', Arial, sans-serif;
 
 // Import 
 @import 'bootstrap/mixins';
@@ -140,13 +140,32 @@ $font-secondary: 'Open Sans', Arial, sans-serif;
 body {
   font-family: $font-secondary;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: $brand-body-color;
   background: $brand-bg-color;
   height: 100%;
   position: relative;
+}
 
+h1 {
+  font-size: 3.05em;
+}
+
+h2 {
+  font-size: 2.44em;
+}
+
+h3 {
+  font-size: 1.95em;
+}
+
+h4 {
+  font-size: 1.56em;
+}
+
+h5 {
+  font-size: 1.25em;
 }
 
 a {
@@ -483,7 +502,6 @@ img {
     text-align: center;
 
     h1 {
-      font-size: 70px;
       text-transform: uppercase;
       color: $brand-primary;
       margin: 0 0 20px 0;
@@ -496,7 +514,6 @@ img {
     }
 
     h2 {
-      font-size: 20px;
       line-height: 30px;
       font-weight: 300;
       color: rgba(255, 255, 255, .8);
@@ -867,20 +884,15 @@ section:nth-child(2n) {
 
   h2 {
     margin: 0 0 0 0;
-    font-size: 26px;
     font-weight: 400;
     color: $brand-white;
     position: relative;
     display: block;
     padding-bottom: 10px;
     line-height: 1.5;
-    @media screen and (max-width: $screen-sm) {
-      font-size: 28px;
-    }
   }
 
-  h3 {
-    font-size: 16px;
+  h4 {
     font-weight: 400;
     line-height: 1.8;
     // color: lighten($brand-bg-color, 20%);
@@ -903,8 +915,7 @@ section:nth-child(2n) {
     }
 
     @media screen and (max-width: $screen-sm) {
-      font-size: 16px !important;
-      line-height: 28px;
+      line-height: 1.5;
     }
   }
 }
@@ -930,7 +941,6 @@ section:nth-child(2n) {
   }
 
   .section-title {
-    font-size: 22px;
     color: $brand-white;
     position: relative;
     padding-bottom: 20px;
@@ -981,7 +991,7 @@ section:nth-child(2n) {
   padding: 0;
 
   li {
-    font-size: 14px;
+    // font-size: 14px;
     list-style: none;
     margin: 0 0 20px 0;
     position: relative;
@@ -995,7 +1005,7 @@ section:nth-child(2n) {
       position: absolute;
       top: 0;
       left: 0;
-      font-size: 20px;
+      // font-size: 20px;
       color: lighten($brand-bg-color, 20%);
     }
 
@@ -1150,7 +1160,7 @@ section:nth-child(2n) {
     display: inline-block;
 
     a {
-      font-size: 16px;
+      // font-size: 16px;
       display: table;
       width: 40px;
       height: 40px;
