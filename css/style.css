@@ -545,35 +545,35 @@ img {
     padding: 3em 0;
   }
 }
-#gallery .wrap-testimony {
+#gallery .wrap-gallery {
   position: relative;
   width: 100%;
 }
-#gallery .wrap-testimony .testimony-slide {
+#gallery .wrap-gallery .gallery-slide {
   text-align: center;
 }
-#gallery .wrap-testimony .testimony-slide span {
+#gallery .wrap-gallery .gallery-slide span {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   font-family: "obelix-pro", Arial, sans-serif !important;
 }
-#gallery .wrap-testimony .testimony-slide span a.twitter {
+#gallery .wrap-gallery .gallery-slide span a.twitter {
   color: #eab900;
   font-weight: 300;
 }
-#gallery .wrap-testimony .testimony-slide figure {
+#gallery .wrap-gallery .gallery-slide figure {
   margin-bottom: 20px;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
-#gallery .wrap-testimony .testimony-slide figure img {
+#gallery .wrap-gallery .gallery-slide figure img {
   height: 40vh;
 }
-#gallery .wrap-testimony .testimony-slide blockquote {
+#gallery .wrap-gallery .gallery-slide blockquote {
   border: none;
   width: 72%;
   position: relative;
@@ -581,18 +581,18 @@ img {
   margin: 0 auto 30px;
 }
 @media screen and (max-width: 992px) {
-  #gallery .wrap-testimony .testimony-slide blockquote {
+  #gallery .wrap-gallery .gallery-slide blockquote {
     width: 100%;
   }
 }
-#gallery .wrap-testimony .testimony-slide blockquote p {
+#gallery .wrap-gallery .gallery-slide blockquote p {
   font-style: normal;
   color: #fff;
   font-weight: 100;
   font-size: 20px;
   line-height: 1.6em;
 }
-#gallery .wrap-testimony .testimony-slide blockquote:after {
+#gallery .wrap-gallery .gallery-slide blockquote:after {
   content: "";
   position: absolute;
   display: block;
@@ -603,7 +603,7 @@ img {
   margin-left: -25px;
   bottom: 0;
 }
-#gallery .wrap-testimony .testimony-slide.active {
+#gallery .wrap-gallery .gallery-slide.active {
   display: block;
 }
 

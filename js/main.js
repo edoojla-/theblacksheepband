@@ -34,7 +34,7 @@
     };
 
 
-    const testimonialCarousel = function () {
+    const galleryCarousel = function () {
         const owl = $('.owl-carousel-fullwidth');
         owl.owlCarousel({
             items: 1,
@@ -215,17 +215,17 @@
         }
     };
 
-    const testimonyAnimate = function () {
-        const testimony = $('#gallery');
-        if (testimony.length > 0) {
+    const galleryAnimate = function () {
+        const gallery = $('#gallery');
+        if (gallery.length > 0) {
 
-            testimony.waypoint(function (direction) {
+            gallery.waypoint(function (direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
                     setTimeout(function () {
-                        testimony.find('.to-animate').each(function (k) {
+                        gallery.find('.to-animate').each(function (k) {
                             const el = $(this);
 
                             setTimeout(function () {
@@ -366,12 +366,12 @@
         clickMenu();
         // windowScroll();
         navigationSection();
-        testimonialCarousel();
+        galleryCarousel();
 
         // Animations
         homeAnimate();
         exploreAnimate();
-        testimonyAnimate();
+        galleryAnimate();
         servicesAnimate();
         teamAnimate();
         footerAnimate();
