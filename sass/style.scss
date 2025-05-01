@@ -480,7 +480,7 @@ img {
   }
 
   &, .text-wrap {
-    height: 900px;
+    height: calc(100vh - 50px);
   }
 
   .text-wrap {
