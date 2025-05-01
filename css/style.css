@@ -671,8 +671,8 @@ img {
   margin-bottom: 20px;
 }
 #band .box-band .user img {
-  width: 147px;
-  height: 147px;
+  max-width: 300px;
+  max-height: 300px;
   margin-bottom: 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
