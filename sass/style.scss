@@ -747,8 +747,7 @@ img {
         @include inline-block;
 
         img {
-          width: 90px;
-          @include border-radius(50%);
+          height: calc(40vh);
         }
       }
 
@@ -787,23 +786,6 @@ img {
       &.active {
         display: block;
       }
-    }
-
-    .arrow-thumb {
-      position: absolute;
-      top: 40%;
-      display: block;
-      width: 100%;
-
-      a {
-        font-size: 32px;
-        color: #dadada;
-
-        &:hover, &:focus, &:active {
-          text-decoration: none;
-        }
-      }
-
     }
   }
 }

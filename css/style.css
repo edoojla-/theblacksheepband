@@ -571,11 +571,7 @@ img {
   *display: inline;
 }
 #gallery .wrap-testimony .testimony-slide figure img {
-  width: 90px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  height: 40vh;
 }
 #gallery .wrap-testimony .testimony-slide blockquote {
   border: none;
@@ -609,19 +605,6 @@ img {
 }
 #gallery .wrap-testimony .testimony-slide.active {
   display: block;
-}
-#gallery .wrap-testimony .arrow-thumb {
-  position: absolute;
-  top: 40%;
-  display: block;
-  width: 100%;
-}
-#gallery .wrap-testimony .arrow-thumb a {
-  font-size: 32px;
-  color: #dadada;
-}
-#gallery .wrap-testimony .arrow-thumb a:hover, #gallery .wrap-testimony .arrow-thumb a:focus, #gallery .wrap-testimony .arrow-thumb a:active {
-  text-decoration: none;
 }
 
 .videos .box-videos {
