@@ -315,7 +315,7 @@ img {
   background: rgba(38, 39, 44, 0.6);
 }
 #home, #home .text-wrap {
-  height: 900px;
+  height: calc(100vh - 50px);
 }
 #home .text-wrap {
   display: flex;
