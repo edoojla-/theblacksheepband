@@ -333,10 +333,12 @@ img {
 #home .text-wrap .row:first-child {
   position: absolute;
   top: 25%;
+  z-index: 99;
 }
 #home .text-wrap .row:last-child {
   position: absolute;
   bottom: 0;
+  z-index: 50;
 }
 #home h1 {
   text-transform: uppercase;
