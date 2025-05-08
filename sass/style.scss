@@ -705,6 +705,13 @@ img {
   }
 }
 
+iframe {
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 #gallery {
   // margin-bottom: 80px;
   // padding: 0 40px;
