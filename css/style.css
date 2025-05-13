@@ -435,33 +435,11 @@ img {
   }
 }
 
-.tour {
-  padding-bottom: 40px;
-}
-
-.mt {
-  margin-top: 0;
-  margin-bottom: 80px;
-}
-.mt h4 {
-  position: relative;
-  padding-left: 40px;
-  font-size: 20px;
-}
-.mt h4 i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #ffa362;
-}
-.mt > div {
-  margin-bottom: 40px;
-}
-.mt .list-nav {
+.list-nav {
   margin: 50px 0 0 0;
   padding: 0;
 }
-.mt .list-nav li {
+.list-nav li {
   list-style: none;
   font-size: 14px;
   padding: 1.3em 0 1.3em 6.75em;
@@ -469,17 +447,17 @@ img {
   position: relative;
   border-top: solid 1px #26272c;
 }
-.mt .list-nav li:first-child {
+.list-nav li:first-child {
   border-top: 0;
 }
-.mt .list-nav li i {
+.list-nav li i {
   position: absolute;
   left: 0;
   top: 0;
   font-size: 18px;
   color: #ffa362;
 }
-.mt .list-nav li .date {
+.list-nav li .date {
   display: block;
   position: absolute;
   left: 0;
@@ -493,12 +471,12 @@ img {
   border-bottom-left-radius: 5px;
   padding: 0.5em 0.75em 0 1em;
 }
-.mt .list-nav li .date strong {
+.list-nav li .date strong {
   display: block;
   font-size: 1.75em;
   padding-top: 0.15em;
 }
-.mt .list-nav li .date::after {
+.list-nav li .date::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -507,27 +485,8 @@ img {
   border-top: solid 1.8em transparent;
   border-bottom: solid 1.8em transparent;
 }
-.mt .list-nav li h5 {
+.list-nav li h5 {
   margin: 0;
-}
-
-.list-nav {
-  margin: 30px 0 30px 0;
-  padding: 0;
-}
-.list-nav li {
-  list-style: none;
-  font-size: 14px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-  position: relative;
-}
-.list-nav li i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 18px;
-  color: #ffa362;
 }
 
 iframe {
