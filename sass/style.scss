@@ -746,7 +746,8 @@ iframe {
         @include inline-block;
 
         img {
-          height: calc(40vh);
+          height: 40vh;
+          object-fit: contain;
         }
       }
 

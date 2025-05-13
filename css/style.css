@@ -572,6 +572,7 @@ iframe {
 }
 #gallery .wrap-gallery .gallery-slide figure img {
   height: 40vh;
+  object-fit: contain;
 }
 #gallery .wrap-gallery .gallery-slide blockquote {
   border: none;
