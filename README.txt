@@ -27,9 +27,6 @@ http://modernizr.com/
 Google Fonts
 https://www.google.com/fonts/
 
-Map
-http://maps.google.com
-
 Icomoon
 https://icomoon.io/app/
 
@@ -47,6 +44,3 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 Stellar Parallax
 http://markdalgleish.com/projects/stellar.js/
-
-Demo Images:
-http://unsplash.com
